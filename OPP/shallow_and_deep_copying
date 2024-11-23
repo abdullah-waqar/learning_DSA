@@ -1,0 +1,13 @@
+Shallow Copy:
+    1. Shallow Copy stores the references of objects to the original memory address.  
+
+    2. Shallow Copy reflects changes made to the new/copied object in the original object. 
+
+    3. A shallow copy is faster.
+
+Deep Copy:
+    1. Deep copy stores copies of the object’s value.
+    
+    2. Deep copy doesn’t reflect changes made to the new/copied object in the original object.
+
+    3. Deep copy is comparatively slower.
