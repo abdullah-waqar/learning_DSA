@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int main()
@@ -6,6 +7,7 @@ int main()
     int arr[5] = {3,4,5,1,2};
 
     int count = 0;
+
     for(int i = 1; i < 5; i++)
     {
        if(arr[i-1] > arr[i])
