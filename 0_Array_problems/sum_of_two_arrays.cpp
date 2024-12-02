@@ -24,5 +24,6 @@ int main()
     cout << num1 <<  " " << num2;
 
     cout << "Sum of two numbers: " << num1 + num2 << endl;
+
     
 }
