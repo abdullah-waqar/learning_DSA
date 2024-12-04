@@ -22,6 +22,24 @@ int getLength(char name[])
     return count;
 }
 
+bool isPlaindrome(char name[] , int n)
+{
+    int start = 0;
+    int end = n-1;
+    bool ans = true;
+    while(start < end)
+    {
+        if(name[start++] != name[end--])
+        {
+            ans = false;
+            break;
+        }
+    }
+
+    return ans;
+}
+
+
 int main()
 {
     // char can only store one single character and if we want to store the multiple characters than we can use the character array
@@ -37,5 +55,8 @@ int main()
     reverse(name , getLength(name));
 
     cout << "Your reverse name is: " << name << endl;
-    
+    char a[] = "Tom";
+
+   cout << "answer is: " << isPlaindrome(name , getLength(name)) << endl;
+   
 }
