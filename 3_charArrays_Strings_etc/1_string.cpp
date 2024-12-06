@@ -62,9 +62,26 @@ public:
     }
 };
 
+//* alternative approch
+bool isPalindrome(string str) {
+    int s = 0;
+    int e = str.length()-1;
+    while(s < e)
+    {
+        if(!isalnum(str[s])) {s++; continue;}
+        if(!isalnum(str[e])) {e--; continue;}
+        if(tolower(str[s]) != tolower(str[e])) return false;
+        else {
+            s++;
+            e--;
+        }
+    }
+    return true;
 
+}
 
 int main() {
         Solution sol;
-        cout << sol.isPalindrome("A man, a plan, a canal: Panama");
+        cout << sol.isPalindrome("A man, a plan, a canal: Panama") << endl; 
+        cout << isPalindrome("A man, a plan, a canal: Panamaf") << endl;
 }
