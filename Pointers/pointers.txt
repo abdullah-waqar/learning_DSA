@@ -1,0 +1,13 @@
+Pointer => Variables that stores address of another variable
+
+int a; => this store in the memory let sat at address position 304
+
+int *p; => this is a pointer which takes some value in the memory let say at address 201
+
+p = &a; => this amparsand gives the address at which the variable "a" is store and put that address which is (304) inside p 
+
+a = 5; => this will put the value 5 in the variable "a"
+
+print p => this will give the address at which the variable "a" is store which is 304
+print &a => this will also give the address at which the variable "a" is store which is 304
+print *p => this will give the value at the address which is 5, this is called derefrencing operator
