@@ -18,11 +18,11 @@ class Account {
         string userName;
     
     //* Constructor: Non parameterized
-    // Account() {
-    //     userID = 0000;
-    //     userName = "Unknown";
-    //     balance = 0.0;
-    // }
+    Account() {
+        userID = 0000;
+        userName = "Unknown";
+        balance = 0.0;
+    }
     //* parametrized constructor
     Account(int userID, string userName, double balance) {
         this->userID = userID;
