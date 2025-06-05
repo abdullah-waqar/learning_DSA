@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     int size = 5;
-    int arr[size] = {20 , 17 , 15 , 14 , 13};
+    int arr[5] = {20 , 17 , 15 , 14 , 13};
     int target = 17;
 
     int start = 0;
